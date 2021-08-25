@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+ 
   // ========= DO NOT CHANGE THE INPUT CODE BELOW ==================
    int length, width, radius;
    cout << "Enter length of Rectangle : ";
@@ -13,6 +14,19 @@ int main() {
    cout << "Enter radius of Circle : ";
    cin >> radius;
    // ======== DO NOT CHANGE THE CODE GIVEN ABOVE ====================
+   Rectangle* rec;
+   rec=new Rectangle(length,width);
+
+   Circle*circ;
+   circ=new Circle(radius);
+
+   rec->display();
+   circ->display();
+   
+
+   delete rec;
+   delete circ;
+
    
    // 1. Create a dynamic Rectangle type variable (pointer)
    // 2. Create a dynamic Rectangle Object set the length and width that was input from the keyboard
